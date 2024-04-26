@@ -22,6 +22,7 @@ public class TransactionCommitAndRollback {
             System.out.println(resultSet1.getString(1) + " -- " +  resultSet1.getString(2));
         }
 
+
         System.out.println("Tx begins");
         conn.setAutoCommit(false);
         statement.executeUpdate("INSERT INTO sql5701956.DemoTable1 VALUES ('3','NEW VALUE 3');");
